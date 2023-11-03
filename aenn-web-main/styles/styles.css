@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Changa&family=Goldman&family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: 'Lovelo'; /* Nombre de la fuente que usarás en CSS */
+    src: url('../font/Lovelo\ Black.otf') format('truetype'); /* Ruta relativa al archivo .ttf */
+}
+@font-face {
+    font-family: 'LoveloBold'; /* Nombre de la fuente que usarás en CSS */
+    src: url('../font/Lovelo\ Line\ Bold.otf') format('truetype'); /* Ruta relativa al archivo .ttf */
+}
+
+.fl1{
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0; /* Agrega espacio para el contenido de la barra de navegación */
+    z-index: 100;
+}
+body{
+    background-color: black;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin:auto;
+}
+
+td {
+    padding: 5px; /* Ajustar el espaciado */
+    border: 1px solid #ccc;
+    transition: transform 0.3s; 
+}
+
+td:hover {
+    transform: scale(2.1); /* Aumentar el tamaño en un 10% al poner el cursor */
+}
+
+.pulsar{
+    color:blueviolet;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.col4{
+   text-align:center;
+}
+.mn2{
+    margin-top: 30px;
+}
+
+i{
+    color: magenta;
+    font-size: 45px;
+}
+.ache1{
+    text-align: center;
+}
+.tracto{
+    text-align:center;
+}
+button{
+    text-align: right;
+}
+.navbar-brand{
+    color:white;
+}
+.nav-link{
+    color:white;
+}
+.zero{
+    margin-top:20px;
+}
+h1{
+    margin-top: 55px;
+    color: white;
+    font-family: 'Lovelo', sans-serif;
+    text-shadow: 3px 1px magenta, 3px 0 blue;
+}
+p{
+    color: white;
+    font-family: 'Changa', sans-serif;
+}
+.fl2{
+    background-image: url(gif4.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-top: 70px;
+  }
+
+.ap{
+    font-size:25px;
+    color: white;
+    margin-left:5px;
+  }

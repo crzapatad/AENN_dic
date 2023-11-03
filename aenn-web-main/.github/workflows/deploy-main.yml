@@ -1,0 +1,26 @@
+name: Build and Deploy main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      
+      - name: Deploy via FTP
+        run: python deploy.py --env main
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PWD: ${{ secrets.FTP_PWD }}
