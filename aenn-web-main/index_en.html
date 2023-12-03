@@ -1,161 +1,272 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/51db37e3c9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <title>Asociación Estudiantil de Neurociencia y Neurotecnología</title>
-    <link rel="icon" type="image/x-icon" href="./assets/logo3.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Tektur&display=swap" rel="stylesheet">
-    
-    <!--Links AENN 1-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
-    <title>AENN</title>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asociación Estudiantil de Neurociencia y Neurotecnología</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="estiloAENN1.css">
+  <script src="https://kit.fontawesome.com/51db37e3c9.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid fl1 d-flex justify-content-center align-items-center">
-            <img class="imag" src="./assets/logosinfondoo.png" width="60px" height="60px">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quienesomos">Who are we</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#galeria">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#siguenos">Follow Us</a>
-                    </li>
-                </ul>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="assets/aennBlanco.png" width="70" height="80">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quienes-somos"><b>Who are we</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria"><b>Gallery</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#siguenos"><b>Follow us</b></a>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <img src="assets/españa.png" width="30px">
+                    Change to spanish version
+                </a>
+            </li>
+        </ul>
+       </div>
+    </div>
+  </nav>
+
+  <!-- Sección Quiénes Somos -->
+  <div id="inicio" class="inicioAENN">
+    <h1 id="titulo" class="animacionTitulo"></h1>
+  </div>
+  <div class="center-container">
+    <img src="assets/ceregif.gif" class="gifcerebro">
+  </div>
+  <!--carrusel-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 detalle"></div>
+      <div class="col-md-6">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="assets/cenn1.png" class="d-block w-100" alt="...">
             </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <img src="./assets/españa.png" width="30px">
-                            Change to spanish version
-                        </a>
-                    </li>
-                </ul>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="assets/cenn2.png" class="d-block w-100" alt="...">
             </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-    </nav>
-    
 
-<div class="container-fluid fl2">
-  <h1 class="ache1">Neuroscience never ceases to amaze us</h1>
-  <div class="row">
-    <div class="col-md-3">
-    
+      
+      </div>
+      <div class="col-md-3"></div>
     </div>
-
-    <div class="col-md-6">
-      <img class="tracto" src="./assets/tracto7.jpeg" width="500px">
-    </div>
-
-    <div class="col-md-3">
-
-    </div>
-
-
   </div>
-</div>
-
-<div class="container-fluid fl2" id="quienesomos">
-  <h1 class="zero"><img src="./assets/negro.jpg" width="1px"></h1>
-  <h1>Who are we?</h1>
-    <p>We are the AENN, a nonprofit organization which has 
-    the aim of spreading knowledge about neuroscience field in Chile, considering that a formal
-    neuroscience degree does not exist in our country. However, we hope thay someday neuroscience
-    will be more relevant in education.</p>
-
-  <h1>Origin of AENN</h1>
-  <p>AENN's origin as a group of friends who were studying at university
-    and shared a common interest for neuroscience. They wanted to show the lack of
-    neursocience education in Chilean universities, as well as spreading scientific
-    knowledge within student communities.</p>
-
-  <h1>Values</h1>   
-  <p>Student Association of Neuroscience and Neurotechnology has five values
-    that need to be respected in all activities: </p>
-</div>
+  <!--fincarrusel-->
 
 
-<div class="container-fluid">
-  <div class="d-flex justify-content-between">
-    <div class="col-2 text-center">
-      <img src="./assets/Divulgacion.png" class="img-fluid">
-      <p>To democratize knowledge</p>
+  <div id="quienes-somos" class="seccion">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 fondow">
+          <h1>Who are we</h1>
+          <p>We are the AENN, a nonprofit organization which has 
+            the aim of spreading knowledge about neuroscience field in Chile, considering that a formal
+            neuroscience degree does not exist in our country. However, we hope thay someday neuroscience
+            will be more relevant in education.
+         </p>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 fondow">
+          <h1>Origin of AENN</h1>
+          <p>AENN's origin as a group of friends who were studying at university
+            and shared a common interest for neuroscience. They wanted to show the lack of
+            neursocience education in Chilean universities, as well as spreading scientific
+            knowledge within student communities.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="col-2 text-center">
-      <img src="./assets/integridad.png" class="img-fluid">
-      <p>Scientific integrity</p>
-    </div>
-
-    <div class="col-2 text-center">
-      <img src="./assets/igualdad.png" class="img-fluid">
-      <p>Gender equality</p>
-    </div>
-
-    <div class="col-2 text-center">
-      <img src="./assets/respeto.png" class="img-fluid">
-      <p>Respect to all people</p>
-    </div>
-
-    <div class="col-2 text-center">
-      <img src="./assets/Beneficiencia.png" class="img-fluid">
-      <p>Beneficence and not maleficence</p>
-    </div>
-
-  </div>
-</div>
    
 
-    <h1>Our mission</h1> 
-    <p>To build a community that generates interdisciplinar spaces
-      about neuroscience and neurotechnology to facilitate access to these disciplines.
-    </p>
-    <h1>Our point of view</h1>
-    <p>To be a national community of neuroscience and neurotechnology
-      that interconnects all people in our country who are interested in these fields.</p>
-    <h1>Our goal</h1>
-    <p>To share knowledge regarding neuroscience and neurotechnology with students of diverse
-        fields, through academic activities and scientific divulgation with the purpose of
-        the democratization of knowledge and neuroscientific culture.
-    </p>
+    <h1>Principles</h1>   
+    <p>Student Association of Neuroscience and Neurotechnology has five values
+        that need to be respected in all activities: </p>
+  </div>
+
+  <div class="seccion">
+    <!----LOGOS-->
+  <img src="assets/Divulgacion.png" class="foto foto-animada" alt="Divulgacion" data-bs-toggle="modal" data-bs-target="#exampleModal10" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">To democratize knowledge</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/Divulgacion.png" class="modal-image" alt="Divulgacion" style="transform: scale(1); transition: transform 1s ease-in-out;">
+          Commitment to sharing information in a transparent and accessible manner, promoting openness and understanding.
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <img src="assets/integridad.png" class="foto foto-animada" alt="Integridad" data-bs-toggle="modal" data-bs-target="#exampleModal11" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Integrity</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/integridad.png" class="modal-image" alt="María Fernanda Cuevas" style="transform: scale(1); transition: transform 1s ease-in-out;">
+          Maintain high ethical standards and act with honesty and consistency in all interactions and decisions.
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>
+<!--FIN LOGOS-->
+
+<img src="assets/igualdad.png" class="foto foto-animada" alt="Igualdad" data-bs-toggle="modal" data-bs-target="#exampleModal12" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+           Equality
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/igualdad.png" class="modal-image" alt="Igualdad" style="transform: scale(1); transition: transform 1s ease-in-out;">
+          Ensuring fair and equitable treatment for all, regardless of differences, promoting inclusion and diversity.
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+ </div>
+
+ <img src="assets/respeto.png" class="foto foto-animada" alt="respeto" data-bs-toggle="modal" data-bs-target="#exampleModal13" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Respect</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/respeto.png" class="modal-image" alt="María Fernanda Cuevas" style="transform: scale(1); transition: transform 1s ease-in-out;">
+          Recognizing and valuing individuality and the opinions of others, fostering an environment of tolerance and mutual consideration.
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <img src="assets/Beneficiencia.png" class="foto foto-animada" alt="María Fernanda Cuevas" data-bs-toggle="modal" data-bs-target="#exampleModal14" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Benevolence</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/Beneficiencia.png" class="modal-image" alt="María Fernanda Cuevas" style="transform: scale(1); transition: transform 1s ease-in-out;">
+          Actively seeking well-being and positive contribution, working for the benefit of all parties involved.
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>
+  </div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 fondow">
+          <h1 class="seccion">Our mission</h1> 
+          <p class="seccion">
+            Building a community that creates interdisciplinary spaces around neuroscience and neurotechnology to facilitate access to these disciplines.
+        </p>
+        </div>
+        <div class="col-4 fondow">
+          <h1 class="seccion">Our vision</h1>
+          <p>To be a national community of neuroscience and neurotechnology that connects all individuals in the country interested in these disciplines.</p>
+        </div>
+        <div class="col-4 fondow">
+          <h1 class="seccion">Our goal</h1>
+          <p class="seccion">Bringing the knowledge of neuroscience and neurotechnology closer to students from various disciplines through the organization of academic activities and scientific outreach, with the aim of democratizing neuroscience knowledge and culture.</p>
+        </div>
+      </div>
     
-    <h1 id="galeria">Gallery</h1> 
+    
+ 
+  
+      <h1 id="galeria">Photo Gallery</h1> 
     <h1>CENN 2022</h1>
-    <p>CENN was the first Congress Student of Neuroscience and Neurotechnology, realized in 2022.</p>
+    <p>CENN was the first Student Congress of Neuroscience and Neurotechnology, held in the year 2022.</p>
 
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src ="./assets/CENN1-min.jpeg" width=510px height=330px alt="Imagen 1" class="img"> 
+              <img src ="assets/CENN1-min.jpeg" alt="Imagen 1" class="img"> 
             </div>
             <div class="carousel-item">
-              <img src ="./assets/CENN2-min.jpeg" width="510px" height="330px" alt="imagen 2" class="img">
-             
+              <img src ="assets/CENN2-min.jpeg" alt="imagen 2" class="img">
             </div>
             <div class="carousel-item">
-              <img src ="./assets/CENN3-min.jpeg" width="510px" height="330px" alt="imagen 2" class="img">
+              <img src ="assets/CENN3-min.jpeg" alt="imagen 2" class="img">
             </div>
             <div class="carousel-item">
-              <img src ="./assets/CENN4-min.jpeg" width="510px" height="330px" alt="imagen 2" class="img">
+              <img src ="assets/CENN4-min.jpeg" alt="imagen 2" class="img">
             </div>
             <div class="carousel-item">
-              <img src ="./assets/CENN5-min.jpg" width="510px" height="330px" alt="imagen 2" class="img">
+              <img src ="assets/CENN5-min.jpg" alt="imagen 2" class="img">
             </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -167,107 +278,227 @@
           </button>
         </div>
 
-        <h1>Workshop of Neuronal Microscopy</h1>
-        <p>The Workshop of Neuronal Microscopy was an initiative made in Pontifical Catholic University of Chile by 
-          AENN, to spread neuroscience to students.</p>
-        <table>
-          <tr>
-              <td><img src="./assets/redeca1.jpg" alt="Imagen 1"></td>
-              <td><img src="./assets/redeca4.jpg" alt="Imagen 2"></td>
-          </tr>
-          <tr>
-              <td><img src="./assets/micro1.png" alt="Imagen 3"></td>
-              <td><img src="./assets/neuronal20.png" alt="Imagen 4"></td>
-          </tr>
-          <p class="pulsar">Click on image to zoom</p>
-      </table>
-       
+  </div>
+
+  <h1>Neuronal Microscopy Workshop</h1>
+        <p>The Neuronal Microscopy Workshop was an initiative carried out 
+            at the Pontifical Catholic University of Chile by AENN, aimed 
+            at bringing neuroscience closer to students.</p>
+      <img src="assets/redeca1.jpg" alt="Imagen 1" class="foto2">
+      <img src="assets/redeca4.jpg" alt="Imagen 2" class="foto2">
+      <img src="assets/micro1.png" alt="Imagen 3" class="foto2">
+      <img src="assets/neuronal20.png" alt="Imagen 4" class="foto2">
+
+
+  <div id="miembros" class="seccion">
+    <h1>Coordination and Leadership</h1>
+
+    <img src="assets/ignacio2.png" class="foto foto-animada" alt="Ignacio Jaramillo" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ignacio Jaramillo, President</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/ignacio2.png" class="modal-image" alt="Ignacio Jaramillo" style="transform: scale(1); transition: transform 1s ease-in-out;">
+            <p>Ignacio Jaramillo, current president of the Student Association of Neuroscience and Neurotechnology, is immersed in his bachelor's degree in Psychology at the Autonomous University of Chile. His approach encompasses a cross-sectional perspective of neuroscience. He holds diplomas and a postgraduate degree in microbiota, with a special emphasis on clinical psychoneuroimmunology. His main purpose is to establish diplomatic connections between the various disciplines that make up neuroscience and neurotechnology, directing his research towards the field of microbiota. He aspires to continue expanding his academic horizon with dedication and rigor.
+            </p>
+         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <img src="assets/pablo2.png" class="foto foto-animada" alt="Pablo Muñoz" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Pablo Muñoz, Vice President</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/pablo2.png" class="modal-image" alt="Pablo Muñoz" style="transform: scale(1); transition: transform 1s ease-in-out;">
+            Pablo Muñoz is a Mathematical Civil Engineer from the Federico Santa María Technical University and a Master's student in Mathematics at the same institution. Additionally, he is a student in the Diploma program in the philosophy of science with a focus on the philosophy of complex systems. His interests lie in the philosophy of mind and computational neuroscience. In the future, he would like to work on bridging these areas through mathematical and philosophical tools.
+         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <img src="assets/tanhia2.png" class="foto foto-animada" alt="Tanhia Alvear" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Tanhia Alvear, Treasurer</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/tanhia2.png" class="modal-image" alt="Tanhia Alvear" style="transform: scale(1); transition: transform 1s ease-in-out;">
+            Tanhia Alvear is a biotechnology engineer from UTEM (University of Technology Metropolitana). She is currently pursuing a Ph.D. in Neuroscience at the Pontifical Catholic University of Chile. Her doctoral thesis is focused on studying the effect of α-synuclein on PANX1 channels in neuronal cells.
+         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+   </div>
+   
+
+   <img src="assets/marifer.jpeg" class="foto foto-animada" alt="María Fernanda Cuevas" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h1 class="modal-title fs-5" id="exampleModalLabel">María Fernanda Cuevas, 
+            Coordinator of Well-being and Events Commission"</h1>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+           <img src="assets/marifer.jpeg" class="modal-image" alt="María Fernanda Cuevas" style="transform: scale(1); transition: transform 1s ease-in-out;">
+           Fernanda Cuevas currently serves as the coordinator of the Well-being and Events committees in the Student Association of Neuroscience and Neurotechnology. She is a nursing student at the Universidad San Sebastián. Her interests include cognitive and behavioral neuroscience, as well as neurodegenerative diseases. Her goal is to popularize the knowledge of neuroscience so that it is accessible to everyone, and she would also like to contribute to research in the field of nursing.
+        </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+  </div>
+
+  <img src="assets/vicentep.jpg" class="foto foto-animada" alt="Pablo Muñoz" data-bs-toggle="modal" data-bs-target="#exampleModal5" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Vicente Pinto, Coordinator of Communications and Social Media Commission</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/vicentep.jpg" class="modal-image" alt="Pablo Muñoz" style="transform: scale(1); transition: transform 1s ease-in-out;">
+          Vicente Pinto is a psychologist from the Pontifical Catholic University of Chile. His interests include the study of the therapeutic use of psychedelic substances, as well as understanding how neurobiological effects could explain the functioning of the mind.
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <img src="assets/diego2.png" class="foto foto-animada" alt="Pablo Muñoz" data-bs-toggle="modal" data-bs-target="#exampleModal6" style="cursor: pointer; transform: scale(1); transition: transform 1s ease-in-out;">
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h1 class="modal-title fs-5" id="exampleModalLabel">Diego Bastías, Coordinator of Process Management Unit</h1>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <img src="assets/diego2.png" class="modal-image" alt="Pablo Muñoz" style="transform: scale(1); transition: transform 1s ease-in-out;">
+         Diego Bastías is a Public Administration student at the Autonomous University of Chile. He is the coordinator of the Process Management Unit.
         
-  
-        <h1>
-          AENN Coordinators
-         </h1> 
-<div class="container-fluid">
-  <div class="d-flex justify-content-between">
-    <div class="col-4 text-center">
-      <img src="./assets/ignacio2.png" class="img-fluid" width="150px">
-      <p>President: Ignacio Jaramillo</p>
-    </div>
-    <div class="col-4 text-center">
-      <img src="./assets/pablo2.png" class="img-fluid" width="150px">
-      <p>Vicepresident: Pablo Muñoz</p>
-    </div>
-    <div class="col-4 text-center">
-      <img src="./assets/tanhia2.png" class="img-fluid" width="150px">
-      <p>Treasurer: Tanhia Alvear</p>
-    </div>
-  </div>
+      </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+     </div>
+   </div>
+ </div>
 </div>
------
-<div class="container-fluid">
-  <div class="d-flex justify-content-between">
-    <div class="col-4 text-center">
-      <img src="./assets/diego2.png" class="img-fluid" width="150px">
-      <p>Unity of Process Gestion Coordinator: Diego Bastias</p>
-    </div>
-    <div class="col-4 text-center">
-      <img src="./assets/marifer.jpeg" class="img-fluid" width="150px">
-      <p>Events and Welfare Commission Coordinator: Maria Fernanda Cuevas</p>
-    </div> 
-    <div class="col-4 text-center">
-      <img src="./assets/vicentep.jpg" class="img-fluid" width="150px">
-      <p>Social Media Commission Coordinator: Vicente Pinto</p>
-    </div>
+
+<!-----antes del ultimo div----->
   </div>
-</div>   
-
-</div>   
+</div>    
 
 
+  <footer>
+    <div class="container container-footer">
+      <div class="row">
 
+        <div class="col-md-6 col4">
+          <p class="pe10">Follow us on our social media:</p>
+          <i class="fa-brands fa-instagram fa-beat fa-2xl" style="color: #ee00ff;"></i>
+          <a class="ap" href="https://www.instagram.com/aenn_cl/?hl=en">Instagram</a>
+          <i class="fa-brands fa-youtube fa-beat fa-2xl" style="color: #ff0000;"></i>
+          <a class="ap" href="https://www.youtube.com/@aenn6853">Youtube</a>
+          <i class="fa-brands fa-linkedin fa-beat fa-2xl" style="color: #005eff;"></i>
+          <a class="ap" href="https://www.linkedin.com/company/aenn/">LinkedIn</a>
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <div class="col-md-6 col5">
+          <p class="pe10">Contact:</p>
+          <p class="pe">coordinacion@aenn.cl</p>
+        </div>
 
-        <footer id="siguenos">
-          <div class="container container-footer mn1" id="containerf">
-            <div class="row">
-              <div class="col-md-12 col4">
-                <p class="ap">Follow us </p>
-                <i class="fa-brands fa-instagram fa-beat fa-2xl" style="color: #ee00ff;"></i>
-                <a class="ap" href="https://www.instagram.com/aenn_cl/?hl=en">Instagram</a>
-                <i class="fa-brands fa-youtube fa-beat fa-2xl" style="color: #ff0000;"></i>
-                <a class="ap" href="https://www.youtube.com/@aenn6853">Youtube</a>
-                <i class="fa-brands fa-linkedin fa-beat fa-2xl" style="color: #005eff;"></i>
-                <a class="ap" href="https://www.linkedin.com/company/aenn/">LinkedIn</a>
-             </div>    
-          </div>
+      </div>
 
-          <div class="container container-footer mn2">
-            <div class="row">
-              <div class="col-md-12 col4">
-                <p class="ap">Contact:</p>
-                <p class="ap">coordinacion@aenn.cl</p>
-              </div>
-            </div>
-          </div>
-          
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+          <p class="text-center pe">
+            <img src="assets/aennBlanco.png" width="20px">
+            <span>2</span>
+            <span>0</span>
+            <span>2</span>
+            <span>3</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+</script>
 
-            <div class="row">
-              <div class="col-md-12">
-                <hr>
-                <p class="text-center">
-                  <img src="./assets/chile2.png" width="30px" height="40px">
-                  <span class="texto-blanco">2</span>
-                  <span class="texto-blanco">0</span>
-                  <span class="texto-blanco">2</span>
-                  <span class="texto-blanco">3</span>
-                </p>
-             
-              </div>
-            </div>
-          </div>
-        </footer>
-       
-    
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Función para animar el título
+      function animarTitulo() {
+        const titulo = document.getElementById("titulo");
+        const textoCompleto = "Neuroscience never ceases to amaze us.";
+        let i = 0;
+
+        function mostrarLetra() {
+          titulo.textContent += textoCompleto.charAt(i);
+          i++;
+
+          if (i < textoCompleto.length) {
+            setTimeout(mostrarLetra, 60); // Tiempo de espera entre letras (en milisegundos)
+          }
+        }
+
+        mostrarLetra();
+      }
+
+      animarTitulo();
+    });
+    /*---------------------------------------*/
+     // JavaScript para aplicar la animación cíclica a todas las fotos con la clase 'foto-animada'
+  const fotosAnimadas = document.querySelectorAll('.foto-animada');
+  let escala = 1;
+
+  function aplicarAnimacion() {
+    escala = escala === 1 ? 1.1 : 1;
+
+    fotosAnimadas.forEach(foto => {
+      foto.style.transform = `scale(${escala})`;
+    });
+  }
+
+  // Aplicar la animación cada segundo (1000 milisegundos)
+  setInterval(aplicarAnimacion, 1000);
+  </script>
 </body>
+
 </html>

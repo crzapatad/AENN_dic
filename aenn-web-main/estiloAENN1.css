@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Changa&family=Goldman&family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: 'Lovelo'; /* Nombre de la fuente que usarás en CSS */
+    src: url('font/Lovelo\ Black.otf') format('truetype'); /* Ruta relativa al archivo .ttf */
+}
+@font-face {
+    font-family: 'LoveloBold'; /* Nombre de la fuente que usarás en CSS */
+    src: url('font/Lovelo\ Line\ Bold.otf') format('truetype'); /* Ruta relativa al archivo .ttf */
+}
+nav{
+    position: fixed;
+}
+.fl3{
+    background-image: url("assets/fondito.jpeg");
+}
+.pe10{
+    color: white;
+    font-size: 27px;
+}
+.pe{
+    color: white;
+    font-size: 15px;
+}
+.animacionTitulo{
+    font-size: 70px;
+    margin-top: 100px;
+}
+.seccion{
+    padding:5%;
+   
+}
+.img{
+    width: 250px;
+    height: 250px;
+}
+.modalTitulo{
+    font-size: 20px;
+    padding: 10%;
+}
+.carousel.slide{
+    width: 500px;
+    text-align: center;
+}
+.col-md-3.detalle{
+    padding: 2%;
+}
+.carousel-control-prev-icon{
+    color: black;
+    background-color: black;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
+
+
+.img-fluid{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+}
+.foto2 {
+    width: 350px;
+    height: 350px;
+    border-radius: 30%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+}
+.fl1{
+    background-color:white;
+    top: 0;
+    left: 0;
+    width: 100%;
+  /* Agrega espacio para el contenido de la barra de navegación */
+    z-index: 100;
+}
+body{
+    background-color: white;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin:auto;
+}
+
+td {
+    padding: 5px; /* Ajustar el espaciado */
+    border: 1px solid #ffffff;
+    transition: transform 0.3s; 
+}
+
+td:hover {
+    transform: scale(2.1); /* Aumentar el tamaño en un 10% al poner el cursor */
+}
+
+.pulsar{
+    color:blueviolet;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.col4{
+   text-align:center;
+}
+.col5{
+    text-align: center;
+    margin-top: 30px;
+}
+.mn2{
+    margin-top: 30px;
+}
+
+i{
+    color: magenta;
+    font-size: 45px;
+}
+.ache1{
+    text-align: center;
+}
+.tracto{
+    text-align:center;
+}
+button{
+    text-align: right;
+}
+
+.bg-body-tertiary{
+    background-image: url(assets/fondito.jpeg);
+}
+.fondow {
+    background-image: url(assets/fondito.jpeg); /* Color de fondo de las columnas */
+}
+.gifcerebro{
+    justify-content: center;
+}
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.navbar-brand{
+    color:black;
+}
+.nav-link{
+    color:black;
+}
+.zero{
+    margin-top:20px;
+}
+h1{
+    margin-top: 55px;
+    color: black;
+    font-family: 'Lovelo', sans-serif;
+}
+p{
+    color:black;
+    font-family: 'Changa', sans-serif;
+}
+.inicioAENN{
+    text-align: center;
+}
+.fl2{
+    background-image: url(assets/gif4.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-top: 70px;
+  }
+
+.ap{
+    font-size:20px;
+    color: white;
+    margin-left:5px;
+  }
+
+.modal-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+}
+.modal-header{
+    background-color: white;
+}
+.modal-body{
+    background-image: url(assets/linea2r.jpeg);
+}
+.modal-footer{
+    background-color: bisque;
+}
+
+.container-footer{
+    background-color: black;
+}
+footer{
+    background-color: black;
+}
