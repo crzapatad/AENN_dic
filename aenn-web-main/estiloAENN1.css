@@ -11,6 +11,9 @@
 nav{
     position: fixed;
 }
+.btn-primary{
+    background-color: rgb(237, 42, 255);
+}
 .fl3{
     background-image: url("assets/fondito.jpeg");
 }
@@ -23,7 +26,7 @@ nav{
     font-size: 15px;
 }
 .animacionTitulo{
-    font-size: 70px;
+    font-size: 50px;
     margin-top: 100px;
 }
 .seccion{
@@ -41,6 +44,10 @@ nav{
 .carousel.slide{
     width: 500px;
     text-align: center;
+}
+.cenn{
+    font-size: 25px;
+
 }
 .col-md-3.detalle{
     padding: 2%;
@@ -140,8 +147,18 @@ button{
 .bg-body-tertiary{
     background-image: url(assets/fondito.jpeg);
 }
+.h1_fondow{
+    color:white;
+    font-size: 30px;
+}
+.p_fondow{
+    color:white;
+}
 .fondow {
-    background-image: url(assets/fondito.jpeg); /* Color de fondo de las columnas */
+    background-color: black;/* Color de fondo de las columnas */
+    background-clip: content-box;
+    border-radius: 10%;
+    padding:3%
 }
 .gifcerebro{
     justify-content: center;
